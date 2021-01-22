@@ -33,7 +33,7 @@ const Form = (props)=>{
         terms:'',
     })
 
-   
+     
     
     function handleFieldValidation(e){
         Yup.reach(schema , e.target.name)
