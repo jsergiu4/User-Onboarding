@@ -16,9 +16,9 @@ const schema = Yup.object().shape({
    .required('Password is required'),
    terms: Yup.boolean().oneOf([true],'You must accept terms and conditions')
 })
-
+ 
 const initialState = { 
-    email:'',
+    email:'', 
     password:'',
     terms:false
 }
