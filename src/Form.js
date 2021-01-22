@@ -2,7 +2,7 @@ import App from './App';
 import {useEffect, useState} from 'react'
 import * as Yup from 'yup';
 import axios from 'axios'
-
+  
 const schema = Yup.object().shape({
    email: Yup.string()
    .email('Must be a valid email address')
@@ -60,7 +60,7 @@ const Form = (props)=>{
             [e.target.name]: e.target.type === 'checkbox' ? e.target.checked : e.target.value,
         })
 
-    }
+    } 
     
     useEffect(() =>{
     
